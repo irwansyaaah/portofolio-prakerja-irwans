@@ -3,11 +3,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700;800;900&family=Dangrek&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
     <title>Portofolio Irwansyah</title>
 </head>
 <body>
-    <NavBar>
-        <h1>Testing</h1>
-    </NavBar>
+    <Nav>
+        <p class="text-logo">Portofolio</p>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+            <span class="slider"></span>
+        </label>
+        <div class="nav-right">
+            <a href="#about">About</a>
+            <a href="#experiences">Experiences</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="interest">Interests</a>
+            <a href="award">Award</a>
+        </div>
+    </Nav>
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-text">
+                <h3>Hello, my name is IRWANSYAH</h3>
+                <h1 class="hero-title">I Am <br>Front End <br>Developer</h1>
+                <h5>Always growing with my code</h5>
+            </div>
+            <div class="sosmed">
+                <a href="https://www.linkedin.com/in/irwan-syah-883b22160" target="_blank" class="img-sosmed">
+                    <img src="images/linkedin-logo-png-1853.png" alt="linkedin" width="50px" height="50px">
+                </a>
+                <a href="https://github.com/irwansyaaah" target="_blank" class="img-sosmed">
+                    <img src="images/github.png" alt="github" width="50px" height="50px">
+                </a>
+                <a href="https://instagram.com/irwan_syaaah" target="_blank" class="img-sosmed">
+                    <img src="images/instagram.png" alt="instagram" width="50px" height="50px">
+                </a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img id="img-hero" src="images/image-person.jpg" alt="img-person">
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-title-box">
+            <h2 class="about-title">About</h2>
+        </div>
+        <div class="experiences-container">
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/about.jpg" alt="about">
+                </div>
+                <div class="item-info">
+                    <h2>Irwansyah</h2>
+                    <p>Pengalaman selama 5 tahun di dunia retail, walaupun begitu saya berambisi beralih karir di dunia Informasi Teknologi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experiences">
+        <div class="experiences-title-box">
+            <h2 class="experience-title">Experiences</h2>
+        </div>
+        <div class="experiences-container">
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/pengalaman1.jpg" alt="item 1">
+                </div>
+                <div class="item-info">
+                    <h4>ADA Fashion</h4>
+                    <p>Pengalaman bekerja sebagai Customer Service selama 3 bulan, untuk perbantuan saat Event bulan ramadhan</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/pengalaman2.jpg" alt="item 2">
+                </div>
+                <div class="item-info">
+                    <h4>PT. Indomarco Prismata</h4>
+                    <p>Pengalaman bekerja sebagai Pramuniaga selama 1 tahun 6 bulan</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/pengalaman3.png" alt="item 3">
+                </div>
+                <di class="item-info">
+                    <h4>PT. Home Center Indonesia</h4>
+                    <p>Pengalaman bekerja sebagai Staff Instalasi selama 3 tahun(Nov 2018 - Des 2022)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education">
+        <div class="about-title-box">
+            <h2 class="about-title">Educations</h2>
+        </div>
+        <div class="experiences-container">
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/education1.jpg" alt="education" width="100" height="200px">
+                </div>
+                <div class="item-info">
+                    <h2>SMK Bhakti Pertiwi Kota Tangerang</h2>
+                    <p>Jurusan Akuntansi (2012-2015)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="about-title-box">
+            <h2 class="about-title">Skills</h2>
+        </div>
+        <div class="experiences-container">
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/skills1.webp" alt="skills 1">
+                </div>
+                <div class="item-info">
+                    <h4>Instalasi Furniture</h4>
+                    <p>Berpengalaman sebagai staff instalasi selama 3 tahun di salah satu perusahaan retail Furniture terbesar di Indonesia</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/skills2.jpg" alt="skills2">
+                </div>
+                <div class="item-info">
+                    <h4>Front End Developer</h4>
+                    <p>Walaupun saya seorang first graduate di dunia Front End Developer, saya yakin dengan kemampuan saya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="interest">
+        <div class="experiences-title-box">
+            <h2 class="experience-title">Interests</h2>
+        </div>
+        <div class="experiences-container">
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/interest1.webp" alt="interest1">
+                </div>
+                <div class="item-info">
+                    <h4>Back End Developer</h4>
+                    <p>Selain sebagai Front End Developer saya ingin menguasai skills seorang Back End Developer, agar melengkapi keahlian saya sebagai Fullstack Developer</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/interest2.png" alt="interest2">
+                </div>
+                <div class="item-info">
+                    <h4>Data Analyst</h4>
+                    <p>Saya juga tertarik di bidang menganalisi data</p>
+                </div>
+            </div>
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/interest3.jpg" alt="interest3">
+                </div>
+                <di class="item-info">
+                    <h4>Software Engineer</h4>
+                    <p>Jika saya sudah menguasai skill sebagai Fullstack Developer, saya ingin lanjut mempelajari skill sebagai Software Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="award">
+        <div class="about-title-box">
+            <h2 class="about-title">Award</h2>
+        </div>
+        <div class="experiences-container">
+            <div class="card-item">
+                <div class="img-item">
+                    <img src="images/award.jfif" alt="award">
+                </div>
+                <div class="item-info">
+                    <h2>Award</h2>
+                    <p>Mungkin sekarang ini saya tidak punya award atau penghargaan apapun, tapi di masa depan saya yakin bisa mendapatkannya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h5>&copy; <em id="date"></em>2023 Irwansyah</h5>
+    </footer>
+    <script type="modul" src="script/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,361 @@
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+
+  /* CSS untuk toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    border-radius: 20px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+  
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bitter', Times;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 25px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease;
+    margin-top: 64px;
+    padding-bottom: 50px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #39b3fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    margin-right: 50px;
+}
+
+.nav-right a {
+    font-weight: 500;
+    width: 150px;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+}
+
+.text-logo {
+    font-weight: 900;
+    font-size: 20px;
+    color: #39b3fa;
+    margin-left: 50px;
+}
+
+.hero {
+    display: flex;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.hero-left {
+    display: flex;
+    text-align: center;
+    margin-left: 100px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: xx-large
+}
+
+#hero-left p {
+    line-height: 30px;
+    padding: 30px;
+}
+
+.sosmed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#img-hero {
+    margin-right: 50px;
+    width: 750px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+#experiences {
+    padding: 50px 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.experiences-title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.experience-title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #39b3fa;
+}
+
+.experiences-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.img-item {
+    background-color: rgba(65, 181, 248, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    height: 300px;
+}
+
+.img-item img {
+    width: 200px;
+    border-radius: 20px;
+}
+
+.card-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.item-info h4 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.item-info h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.item-info p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.about-title-box {
+    display: flex;
+    justify-content: center;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #39b3fa;
+}
+
+#education {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about {
+    margin-top: 50px;
+}
+
+#skills {
+    margin-block-end: 50px;
+}
+
+#interest {
+    margin-block-end: 50px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .nav-right a {
+        width: auto;
+    }
+    .nav-right a:not(:last-child) {
+        margin-right: 10px;
+    }
+    #hero {
+        padding: 40px;
+    }
+    #hero-left {
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    #hero-right {
+        display: none;
+    }
+    #about {
+        padding: 50px 40px;
+    }
+    .card-about {
+        flex-direction: column;
+    }
+    .about-box {
+        order: 2;
+        width: 100%;
+    }
+    .about-img-box {
+        order: 1;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .about-box p {
+        text-align: justify;
+    }
+    .experiences-container {
+        flex-wrap: wrap;
+    }
+    #experiences-item {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-right {
+        margin-top: 20px;
+    }
+
+    #hero {
+        margin-right: 0;
+    }
+
+    .hero-title {
+        margin-top: 40px;
+        font-size: 2em;
+    }
+
+    #hero-left p {
+        text-align: justify;
+    }
+
+    #hero-right {
+        display: none;
+    }
+}
+
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+
+  /* CSS untuk toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196F3;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+  
